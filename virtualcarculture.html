@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html>
+<!-- HEAD -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velocity Visions - Virtual Photos page</title>
+    <!-- Linking the CSS file -->
+    <link rel="stylesheet" type=text/css href="CSS/style.css">
+    <!-- Linking the library for the dislike and like JS code -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<!-- BODY -->
+<body>
+    <!-- HEADER -->
+    <header>
+        <a href="index.html"><img class="vv_logo" src="Images/VelocityVisionsLogo.png" height="25px"></a>
+        <h1>Velocity Visions <span onclick="openNav()"> &#9776; </span></h1>
+    </header>
+
+    <!--Navigation bar--> 
+    <nav>
+        <div class="horizontal-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+                <li><a href="categories.html">Categories</a>
+                    <ul class="dropdown">
+                        <li><a class="active" href="virtualcarculture.html">Virtual</a></li>
+                        <li><a href="eventcarculture.html">Event</a></li>
+                    </ul></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- The curtain menu - We put this out side the "Nav" tag because it is an overlay and not part of the layout -->
+    <div id="myNav" class="overlay">
+        <p class="close-icon" onclick="closeNav()"> &times;</p> <!-- A "X" icon to indicate this is to close the overlay -->
+        <div class="overlay-content">
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact Me</a>
+            <a href="categories.html">Categories</a>
+        </div>
+    </div>
+
+    <script>
+        // Here is the JavaScript code
+        // When user click on "sandwich icon" -> opens the overlay(curtain menu)
+
+        // Write the openNav method here
+        function openNav(){
+            document.getElementById("myNav").style.display = "block";
+        }
+
+        // Write the closeNav method here
+        function closeNav(){
+            document.getElementById("myNav").style.display = "none";
+        }
+    </script>
+
+    <!-- MAIN -->
+    <main>
+        <br>
+        <h2>Virtual Car Culture</h2>
+        <br>
+
+        <!-- All Images Div -->
+        <div class="row">
+
+            <div class="columns3">
+                <div class="image_wrapper post">
+                    <img class="blur" src="Images/VirtualCarCultureImages/Altimaniac.png" style="width: 100%;" alt="Altimaniac">
+                    <div class="content slide_up">Altimaniac</div>
+                    <div class="post-ratings-container">
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_up</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_down</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns3">
+                <div class="image_wrapper post">
+                    <img class="blur" src="Images/VirtualCarCultureImages/ApexExecutioner.png" style="width: 100%;" alt="ApexExecutioner">
+                    <div class="content slide_up">Apex Executioner</div>
+                    <div class="post-ratings-container">
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_up</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_down</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns3">
+                <div class="image_wrapper post">
+                    <img class="blur" src="Images/VirtualCarCultureImages/AtTheDriftOfDawn.png" style="width: 100%;" alt="AtTheDriftOfDawn">
+                    <div class="content slide_up">At the Drift of Dawn</div>
+                    <div class="post-ratings-container">
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_up</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_down</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns3">
+                <div class="image_wrapper post">
+                    <img class="blur" src="Images/VirtualCarCultureImages/BlockParty.png" style="width: 100%;" alt="BlockParty">
+                    <div class="content slide_up">Block Party</div>
+                    <div class="post-ratings-container">
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_up</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_down</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns3">
+                <div class="image_wrapper post">
+                    <img class="blur" src="Images/VirtualCarCultureImages/BornToRally.png" style="width: 100%;" alt="BornToRally">
+                    <div class="content slide_up">Born to Rally</div>
+                    <div class="post-ratings-container">
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_up</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_down</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns3">
+                <div class="image_wrapper post">
+                    <img class="blur" src="Images/VirtualCarCultureImages/BurnoutDriveway.png" style="width: 100%;" alt="BurnoutDriveway">
+                    <div class="content slide_up">Burnout Driveway</div>
+                    <div class="post-ratings-container">
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_up</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_down</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns3">
+                <div class="image_wrapper post">
+                    <img class="blur" src="Images/VirtualCarCultureImages/CaveOfElectricWonders.png" style="width: 100%;" alt="CaveOfElectricWonders">
+                    <div class="content slide_up">Cave of Electric Wonders</div>
+                    <div class="post-ratings-container">
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_up</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_down</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns3">
+                <div class="image_wrapper post">
+                    <img class="blur" src="Images/VirtualCarCultureImages/DenseCompetition.png" style="width: 100%;" alt="DenseCompetition">
+                    <div class="content slide_up">Dense Competition</div>
+                    <div class="post-ratings-container">
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_up</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_down</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns3">
+                <div class="image_wrapper post">
+                    <img class="blur" src="Images/VirtualCarCultureImages/DiadelosMuertos.png" style="width: 100%;" alt="DiadelosMuertos">
+                    <div class="content slide_up">Diadelos Muertos</div>
+                    <div class="post-ratings-container">
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_up</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_down</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns3">
+                <div class="image_wrapper post">
+                    <img class="blur" src="Images/VirtualCarCultureImages/Dragon-sizedLegacy.png" style="width: 100%;" alt="Dragon-sizedLegacy">
+                    <div class="content slide_up">Dragon-sized Legacy</div>
+                    <div class="post-ratings-container">
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_up</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_down</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns3">
+                <div class="image_wrapper post">
+                    <img class="blur" src="Images/VirtualCarCultureImages/DrivewayMeet.png" style="width: 100%;" alt="DrivewayMeet">
+                    <div class="content slide_up">Driveway Meet</div>
+                    <div class="post-ratings-container">
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_up</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_down</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns3">
+                <div class="image_wrapper post">
+                    <img class="blur" src="Images/VirtualCarCultureImages/DustInTheLens.png" style="width: 100%;" alt="DustInTheLens">
+                    <div class="content slide_up">Dust in the Lens</div>
+                    <div class="post-ratings-container">
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_up</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_down</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns3">
+                <div class="image_wrapper post">
+                    <img class="blur" src="Images/VirtualCarCultureImages/DutsunNDonuts.png" style="width: 100%;" alt="DutsunNDonuts">
+                    <div class="content slide_up">Dutsun N Donuts</div>
+                    <div class="post-ratings-container">
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_up</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_down</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns3">
+                <div class="image_wrapper post">
+                    <img class="blur" src="Images/VirtualCarCultureImages/EnterElStadio.png" style="width: 100%;" alt="EnterElStadio">
+                    <div class="content slide_up">Enter El Stadio</div>
+                    <div class="post-ratings-container">
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_up</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_down</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns3">
+                <div class="image_wrapper post">
+                    <img class="blur" src="Images/VirtualCarCultureImages/FestivalNewbie.png" style="width: 100%;" alt="FestivalNewbie">
+                    <div class="content slide_up">Festival Newbie</div>
+                    <div class="post-ratings-container">
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_up</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_down</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns3">
+                <div class="image_wrapper post">
+                    <img class="blur" src="Images/VirtualCarCultureImages/FlutterbyButterfly.png" style="width: 100%;" alt="FlutterbyButterfly">
+                    <div class="content slide_up">Flutterby Butterfly</div>
+                    <div class="post-ratings-container">
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_up</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_down</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="columns3">
+                <div class="image_wrapper post">
+                    <img class="blur" src="Images/VirtualCarCultureImages/FoggyForest.png" style="width: 100%;" alt="FoggyForest">
+                    <div class="content slide_up">Foggy Forest</div>
+                    <div class="post-ratings-container">
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_up</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_down</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns3">
+                <div class="image_wrapper post">
+                    <img class="blur" src="Images/VirtualCarCultureImages/FullSend.png" style="width: 100%;" alt="FullSend">
+                    <div class="content slide_up">Full Send</div>
+                    <div class="post-ratings-container">
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_up</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_down</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns3">
+                <div class="image_wrapper post">
+                    <img class="blur" src="Images/VirtualCarCultureImages/FuriouslySighted.png" style="width: 100%;" alt="FuriouslySighted">
+                    <div class="content slide_up">Furiously Sighted</div>
+                    <div class="post-ratings-container">
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_up</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_down</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns3">
+                <div class="image_wrapper post">
+                    <img class="blur" src="Images/VirtualCarCultureImages/HighwayHooligan.png" style="width: 100%;" alt="HighwayHooligan">
+                    <div class="content slide_up">Highway Hooligan</div>
+                    <div class="post-ratings-container">
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_up</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_down</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns3">
+                <div class="image_wrapper post">
+                    <img class="blur" src="Images/VirtualCarCultureImages/JDMIcons.png" style="width: 100%;" alt="JDMIcons">
+                    <div class="content slide_up">JDM Icons</div>
+                    <div class="post-ratings-container">
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_up</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_down</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns3">
+                <div class="image_wrapper post">
+                    <img class="blur" src="Images/VirtualCarCultureImages/LastNightOfSummer.png" style="width: 100%;" alt="LastNightOfSummer">
+                    <div class="content slide_up">Last Night of Summer</div>
+                    <div class="post-ratings-container">
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_up</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_down</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns3">
+                <div class="image_wrapper post">
+                    <img class="blur" src="Images/VirtualCarCultureImages/LunarMasterpiece.png" style="width: 100%;" alt="LunarMasterpiece">
+                    <div class="content slide_up">Lunar Masterpiece</div>
+                    <div class="post-ratings-container">
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_up</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_down</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns3">
+                <div class="image_wrapper post">
+                    <img class="blur" src="Images/VirtualCarCultureImages/LunarZ.png" style="width: 100%;" alt="LunarZ">
+                    <div class="content slide_up">Lunar Z</div>
+                    <div class="post-ratings-container">
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_up</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_down</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="columns3">
+                <div class="image_wrapper post">
+                    <img class="blur" src="Images/VirtualCarCultureImages/MainlandTrackday.png" style="width: 100%;" alt="MainlandTrackday">
+                    <div class="content slide_up">Mainland Trackday</div>
+                    <div class="post-ratings-container">
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_up</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_down</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns3">
+                <div class="image_wrapper post">
+                    <img class="blur" src="Images/VirtualCarCultureImages/MiddayCruise.png" style="width: 100%;" alt="MiddayCruise">
+                    <div class="content slide_up">Midday Cruise</div>
+                    <div class="post-ratings-container">
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_up</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_down</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns3">
+                <div class="image_wrapper post">
+                    <img class="blur" src="Images/VirtualCarCultureImages/NightOfTheDead.png" style="width: 100%;" alt="NightOfTheDead">
+                    <div class="content slide_up">Night of the Dead</div>
+                    <div class="post-ratings-container">
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_up</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_down</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns3">
+                <div class="image_wrapper post">
+                    <img class="blur" src="Images/VirtualCarCultureImages/OneDirtyItalian.png" style="width: 100%;" alt="OneDirtyItalian">
+                    <div class="content slide_up">One Dirty Italian</div>
+                    <div class="post-ratings-container">
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_up</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_down</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns3">
+                <div class="image_wrapper post">
+                    <img class="blur" src="Images/VirtualCarCultureImages/OntoTheRange.png" style="width: 100%;" alt="OntoTheRange">
+                    <div class="content slide_up">Onto the Range</div>
+                    <div class="post-ratings-container">
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_up</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_down</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns3">
+                <div class="image_wrapper post">
+                    <img class="blur" src="Images/VirtualCarCultureImages/OrchestralOrchard.png" style="width: 100%;" alt="OrchestralOrchard">
+                    <div class="content slide_up">Orchestral Orchard</div>
+                    <div class="post-ratings-container">
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_up</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_down</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns3">
+                <div class="image_wrapper post">
+                    <img class="blur" src="Images/VirtualCarCultureImages/OutTheStables.png" style="width: 100%;" alt="OutTheStables">
+                    <div class="content slide_up">Out the Stables</div>
+                    <div class="post-ratings-container">
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_up</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_down</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns3">
+                <div class="image_wrapper post">
+                    <img class="blur" src="Images/VirtualCarCultureImages/RaceOfTheDead.png" style="width: 100%;" alt="RaceOfTheDead">
+                    <div class="content slide_up">Race of the Dead</div>
+                    <div class="post-ratings-container">
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_up</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_down</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="columns3">
+                <div class="image_wrapper post">
+                    <img class="blur" src="Images/VirtualCarCultureImages/RichRambo.png" style="width: 100%;" alt="RichRambo">
+                    <div class="content slide_up">Rich Rambo</div>
+                    <div class="post-ratings-container">
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_up</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_down</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns3">
+                <div class="image_wrapper post">
+                    <img class="blur" src="Images/VirtualCarCultureImages/RiseAndShine.png" style="width: 100%;" alt="RiseAndShine">
+                    <div class="content slide_up">Rise and Shine</div>
+                    <div class="post-ratings-container">
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_up</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_down</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns3">
+                <div class="image_wrapper post">
+                    <img class="blur" src="Images/VirtualCarCultureImages/SeasideRoadtrip.png" style="width: 100%;" alt="SeasideRoadtrip">
+                    <div class="content slide_up">Seaside Roadtrip</div>
+                    <div class="post-ratings-container">
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_up</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_down</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns3">
+                <div class="image_wrapper post">
+                    <img class="blur" src="Images/VirtualCarCultureImages/SidewalkGloom.png" style="width: 100%;" alt="SidewalkGloom">
+                    <div class="content slide_up">Sidewalk Gloom</div>
+                    <div class="post-ratings-container">
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_up</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_down</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns3">
+                <div class="image_wrapper post">
+                    <img class="blur" src="Images/VirtualCarCultureImages/SilverAutumn.png" style="width: 100%;" alt="SilverAutumn">
+                    <div class="content slide_up">Silver Autumn</div>
+                    <div class="post-ratings-container">
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_up</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_down</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns3">
+                <div class="image_wrapper post">
+                    <img class="blur" src="Images/VirtualCarCultureImages/StarrySky.png" style="width: 100%;" alt="StarrySky">
+                    <div class="content slide_up">Starry Sky</div>
+                    <div class="post-ratings-container">
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_up</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_down</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns3">
+                <div class="image_wrapper post">
+                    <img class="blur" src="Images/VirtualCarCultureImages/StormingTheCastle.png" style="width: 100%;" alt="StormingTheCastle">
+                    <div class="content slide_up">Storming the Castle</div>
+                    <div class="post-ratings-container">
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_up</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_down</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns3">
+                <div class="image_wrapper post">
+                    <img class="blur" src="Images/VirtualCarCultureImages/Sunny-sideSideways.png" style="width: 100%;" alt="Sunny-sideSideways">
+                    <div class="content slide_up">Sunny-side Sideways</div>
+                    <div class="post-ratings-container">
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_up</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_down</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="columns3">
+                <div class="image_wrapper post">
+                    <img class="blur" src="Images/VirtualCarCultureImages/SunsetWreck.png" style="width: 100%;" alt="SunsetWreck">
+                    <div class="content slide_up">Sunset Wreck</div>
+                    <div class="post-ratings-container">
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_up</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_down</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns3">
+                <div class="image_wrapper post">
+                    <img class="blur" src="Images/VirtualCarCultureImages/SupraSlide.png" style="width: 100%;" alt="SupraSlide">
+                    <div class="content slide_up">Supra Slide</div>
+                    <div class="post-ratings-container">
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_up</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_down</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns3">
+                <div class="image_wrapper post">
+                    <img class="blur" src="Images/VirtualCarCultureImages/SweetSummerLexy.png" style="width: 100%;" alt="SweetSummerLexy">
+                    <div class="content slide_up">Sweet Summer Lexy</div>
+                    <div class="post-ratings-container">
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_up</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_down</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns3">
+                <div class="image_wrapper post">
+                    <img class="blur" src="Images/VirtualCarCultureImages/TempleExpedition.png" style="width: 100%;" alt="TempleExpedition">
+                    <div class="content slide_up">Temple Expedition</div>
+                    <div class="post-ratings-container">
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_up</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_down</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns3">
+                <div class="image_wrapper post">
+                    <img class="blur" src="Images/VirtualCarCultureImages/TreasureHunt.png" style="width: 100%;" alt="TreasureHunt">
+                    <div class="content slide_up">Treasure Hunt</div>
+                    <div class="post-ratings-container">
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_up</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_down</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns3">
+                <div class="image_wrapper post">
+                    <img class="blur" src="Images/VirtualCarCultureImages/TunnelVision.png" style="width: 100%;" alt="TunnelVision">
+                    <div class="content slide_up">Tunnel Vision</div>
+                    <div class="post-ratings-container">
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_up</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_down</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns3">
+                <div class="image_wrapper post">
+                    <img class="blur" src="Images/VirtualCarCultureImages/VenomousApex.png" style="width: 100%;" alt="VenomousApex">
+                    <div class="content slide_up">Venomous Apex</div>
+                    <div class="post-ratings-container">
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_up</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_down</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+
+        </div>
+
+    </main>
+    
+    <!-- FOOTER -->
+    <footer>
+        <h3>&#169; Luan Mangels 2024<br></h3>
+    </footer>
+
+</body>
+</html>

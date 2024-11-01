@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<!-- HEAD -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velocity Visions - Home page</title>
+    <!-- Linking the CSS file -->
+    <link rel="stylesheet" type=text/css href="CSS/style.css">
+</head>
+
+<!-- BODY -->
+<body>
+    <!-- HEADER -->
+    <header>
+        <a href="index.html"><img class="vv_logo" src="Images/VelocityVisionsLogo.png" height="25px"></a>
+        <h1 href="index.html">Velocity Visions <span onclick="openNav()"> &#9776; </span></h1>
+    </header>
+
+    <!--Navigation bar--> 
+    <nav>
+        <div class="horizontal-nav">
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+                <li><a href="categories.html">Categories</a>
+                    <ul class="dropdown">
+                        <li><a href="virtualcarculture.html">Virtual</a></li>
+                        <li><a href="eventcarculture.html">Event</a></li>
+                    </ul></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- The curtain menu - We put this out side the "Nav" tag because it is an overlay and not part of the layout -->
+    <div id="myNav" class="overlay">
+        <p class="close-icon" onclick="closeNav()"> &times;</p> <!-- A "X" icon to indicate this is to close the overlay -->
+        <div class="overlay-content">
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact Me</a>
+            <a href="categories.html">Categories</a>
+        </div>
+    </div>
+
+    <script>
+        // Here is the JavaScript code
+        // When user click on "sandwich icon" -> opens the overlay(curtain menu)
+
+        // Write the openNav method here
+        function openNav(){
+            document.getElementById("myNav").style.display = "block";
+        }
+
+        // Write the closeNav method here
+        function closeNav(){
+            document.getElementById("myNav").style.display = "none";
+        }
+    </script>
+
+    <!-- MAIN -->
+    <main>
+        <section>
+            <img id = "slide_show_images" src = "Images/SlideShow/SS1.png" width="100%" height="auto">
+        </section>
+
+        <script>
+            // Declare an array of images to create a slideshow
+            let SS_images = [{id: 0, img_url: "Images/SlideShow/SS1.png"}, 
+                             {id: 1, img_url: "Images/SlideShow/SS2.png"}, 
+                             {id: 2, img_url: "Images/SlideShow/SS3.png"}, 
+                             {id: 3, img_url: "Images/SlideShow/SS4.png"}, 
+                             {id: 4, img_url: "Images/SlideShow/SS5.png"}];
+
+            // Create a slideshow element
+            let slideshowIndex = 0;
+            function autoSlideShow() {
+                // Check if slideshowIndex < the lengh of the array, if true -> increase the Index by 1, else set slideshowIndex = 0
+                if (slideshowIndex < SS_images.length - 1) {
+                    slideshowIndex++; // Increment element by 1
+                }
+                else {
+                    slideshowIndex = 0;
+                }
+                // Update the img url accordingly
+                document.getElementById('slide_show_images').src = SS_images[slideshowIndex].img_url;
+                setTimeout(autoSlideShow, 4500);
+            }
+            //Call function
+            autoSlideShow();
+
+        </script>
+
+        <section class="index_paragraph">
+            <h1>Hello & Welcome!</h1>
+            <br>
+            <p>Velocity Visions is a digital portfolio website I’ve created to assist in building an online presence for myself where I can display my personal 
+            interest in cars through the use of photography.
+               <br><br>
+               Over the last few years, I’ve occasionally experimented with photography as a new and different way to express my enjoyment and love for cars and 
+               the culture around it. Throughout my journey my skill as a photographer and the quality of photography that I can produce have improved greatly. 
+               The two types of photography that I’ve had the most experience in are video game photography and photography at events. These events range from 
+               track days, car meets, drag racing events, etc.
+               </p>
+        </section>
+
+        <br>
+        <!-- Images -->
+        <div class="row">
+            <div class="columns">
+                <div class="image_wrapper">
+                    <img class="blur" src="Images/BoxImages/Box1.png" style="width: 100%;" alt="AtTheDriftOfDawn">
+                    <div class="content slide_up">At the Drift of Dawn</div>
+                </div>
+            </div>
+
+            <div class="columns">
+                <div class="image_wrapper">
+                    <img src="Images/BoxImages/Box2.jpg" style="width: 100%;" alt="Event Image 25">
+                </div>
+            </div>
+
+            <div class="columns">
+                <div class="image_wrapper">
+                    <img class="blur" src="Images/BoxImages/Box3.png" style="width: 100%;" alt="SunsetWreck">
+                    <div class="content slide_up">Sunset Wreck</div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <h3>&#169; Luan Mangels 2024<br></h3>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<!-- HEAD -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velocity Visions - Categories page</title>
+    <!-- Linking the CSS file -->
+    <link rel="stylesheet" type=text/css href="CSS/style.css">
+</head>
+
+<!-- BODY -->
+<body>
+    <!-- HEADER -->
+    <header>
+        <a href="index.html"><img class="vv_logo" src="Images/VelocityVisionsLogo.png" height="25px"></a>
+        <h1>Velocity Visions <span onclick="openNav()"> &#9776; </span></h1>
+    </header>
+
+    <!--Navigation bar--> 
+    <nav>
+        <div class="horizontal-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+                <li><a  class="active" href="categories.html">Categories</a>
+                    <ul class="dropdown">
+                        <li><a href="virtualcarculture.html">Virtual</a></li>
+                        <li><a href="eventcarculture.html">Event</a></li>
+                    </ul></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- The curtain menu - We put this out side the "Nav" tag because it is an overlay and not part of the layout -->
+    <div id="myNav" class="overlay">
+        <p class="close-icon" onclick="closeNav()"> &times;</p> <!-- A "X" icon to indicate this is to close the overlay -->
+        <div class="overlay-content">
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact Me</a>
+            <a href="categories.html">Categories</a>
+        </div>
+    </div>
+
+    <script>
+        // Here is the JavaScript code
+        // When user click on "sandwich icon" -> opens the overlay(curtain menu)
+
+        // Write the openNav method here
+        function openNav(){
+            document.getElementById("myNav").style.display = "block";
+        }
+
+        // Write the closeNav method here
+        function closeNav(){
+            document.getElementById("myNav").style.display = "none";
+        }
+    </script>
+
+    <!-- MAIN -->
+    <main>
+        <h2>Photography Categories</h2>
+        <section class="catagory_paragraph">
+            <p>Choose what category of my photography you would like to see:</p>
+        </section>
+        <br>
+
+        <!-- Images -->
+        <div class="row">
+            <div class="columns2">
+                <p class="categoryImageTitles">Virtual</p>
+                <a href="virtualcarculture.html"><img src="Images/VirtualCarCultureImages/LunarMasterpiece.png" style="width: 100%;" alt="VirtualCategoryImage"></a>
+            </div>
+
+            <div class="columns2">
+                <p class="categoryImageTitles">Event</p>
+                <a href="eventcarculture.html"><img src="Images/EventCarCultureImages/EVNT13.jpg" style="width: 100%;" alt="EventCategoryImage"></a>
+            </div>
+        </div>
+        
+        <section class="catagory_paragraph">
+            <p>I've divided up my photography into two main categories. The first category <span class="bold">“Virtual”</span> consists of photos that have been taken from games using their photo modes. 
+            The other category, <span class="bold">"Event"</span>, contains photos that I've taken in person at multiple events. Out of the two, I'd say the first category has the better photos due to me being more experienced and experimental 
+            with that type of photography and usually had the ability to tweak it to my liking completely start to finish.</p>
+        </section>
+        <section>
+            <img class="catagory_image" >
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <h3>&#169; Luan Mangels 2024<br></h3>
+    </footer>
+
+</body>
+</html>

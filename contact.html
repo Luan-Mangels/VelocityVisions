@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<!-- HEAD -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velocity Visions - Contact page</title>
+    <!-- Linking the CSS file -->
+    <link rel="stylesheet" type=text/css href="CSS/style.css">
+</head>
+
+<!-- BODY -->
+<body>
+    <!-- HEADER -->
+    <header>
+        <a href="index.html"><img class="vv_logo" src="Images/VelocityVisionsLogo.png" height="25px"></a>
+        <h1>Velocity Visions <span onclick="openNav()"> &#9776; </span></h1>
+    </header>
+
+    <!--Navigation bar--> 
+    <nav>
+        <div class="horizontal-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="contact.html">Contact Me</a></li>
+                <li><a href="categories.html">Categories</a>
+                    <ul class="dropdown">
+                        <li><a href="virtualcarculture.html">Virtual</a></li>
+                        <li><a href="eventcarculture.html">Event</a></li>
+                    </ul></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- The curtain menu - We put this out side the "Nav" tag because it is an overlay and not part of the layout -->
+    <div id="myNav" class="overlay">
+        <p class="close-icon" onclick="closeNav()"> &times;</p> <!-- A "X" icon to indicate this is to close the overlay -->
+        <div class="overlay-content">
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact Me</a>
+            <a href="categories.html">Categories</a>
+        </div>
+    </div>
+
+    <script>
+        // Here is the JavaScript code
+        // When user click on "sandwich icon" -> opens the overlay(curtain menu)
+
+        // Write the openNav method here
+        function openNav(){
+            document.getElementById("myNav").style.display = "block";
+        }
+
+        // Write the closeNav method here
+        function closeNav(){
+            document.getElementById("myNav").style.display = "none";
+        }
+    </script>
+
+    <!-- MAIN -->
+    <main>
+        <section>
+            <img class="contact_image" src="Images/ContactPageImage.png" style="width: 70%;" alt="DenseCompetition">
+        </section>
+        <section class="contact_paragraph">
+            <h2>Contact Information</h2>
+            <br>
+            <p>Hi, my name is Luan Mangels and if you couldn’t already tell, I hold a deep passion for cars and everything around them.</p>
+            <br>
+            <p>I’ve always been fascinated by these incredible pieces of automotive engineering and very much consider then to be a form of 
+            artwork in their own right; from the way they look to how the perform or even just the sound they produce. I find there to be a 
+            captivating sense of freedom in the way someone can discover/express their interest, emotions or even a piece of their personality 
+            through cars and car culture.</p>
+            <p>Hopefully you’ve already helped yourself around and took an interest in some of the work I’ve done and have found my photography 
+            pieces interesting enough to want to know more about me or maybe some of the stories behind them.</p>
+            <br>
+            <p>Feel free to contact me for queries using this e-mail address: <span class="bold">mangel1@student.eit.ac.nz</span></p>
+            <br>
+            <p>&#169; All rights are reserved for owner and creator <span class="bold">Luan Mangels</span> to copy, redistribute, modify and/or sell any content 
+            from <span class="bold">Velocity Visions</span>.</p>
+            <br>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <h3>&#169; Luan Mangels 2024<br></h3>
+    </footer>
+
+</body>
+</html>

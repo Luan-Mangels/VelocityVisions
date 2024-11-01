@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html>
+<!-- HEAD -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velocity Visions - Event Photos page</title>
+    <!-- Linking the CSS file -->
+    <link rel="stylesheet" type=text/css href="CSS/style.css">
+    <!-- Linking the library for the dislike and like JS code -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<!-- BODY -->
+<body>
+    <!-- HEADER -->
+    <header>
+        <a href="index.html"><img class="vv_logo" src="Images/VelocityVisionsLogo.png" height="25px"></a>
+        <h1>Velocity Visions <span onclick="openNav()"> &#9776; </span></h1>
+    </header>
+
+    <!--Navigation bar--> 
+    <nav>
+        <div class="horizontal-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+                <li><a href="categories.html">Categories</a>
+                    <ul class="dropdown">
+                        <li><a href="virtualcarculture.html">Virtual</a></li>
+                        <li><a class="active" href="eventcarculture.html">Event</a></li>
+                    </ul></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- The curtain menu - We put this out side the "Nav" tag because it is an overlay and not part of the layout -->
+    <div id="myNav" class="overlay">
+        <p class="close-icon" onclick="closeNav()"> &times;</p> <!-- A "X" icon to indicate this is to close the overlay -->
+        <div class="overlay-content">
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact Me</a>
+            <a href="categories.html">Categories</a>
+        </div>
+    </div>
+
+    <!-- Script for the curtain menu -->
+    <script>
+        // When user click on "sandwich icon" -> opens the overlay(curtain menu)
+
+        // Write the openNav method here
+        function openNav(){
+            document.getElementById("myNav").style.display = "block";
+        }
+
+        // Write the closeNav method here
+        function closeNav(){
+            document.getElementById("myNav").style.display = "none";
+        }
+    </script>
+
+    <!-- Script for the Like and Dislike -->
+     <script>
+        document.querySelectorAll(".post").forEach(post => {
+            const postId = post.dataset.postId;
+            const ratings = post.querySelectorAll(".post_rating");
+            const likeRatings = ratings[0];
+
+            ratings.forEach(rating => {
+                const button = rating.querySelector(".post_rating_button");
+                const count = rating.querySelector(".post_rating_count");
+
+                button.addEventListener("click", async () => {
+                    if (rating.classList.contains("post_rating_selected")) {
+                        return;
+                    };
+
+                    count.textContent = Number(count.textContent) + 1;
+
+                    ratings.forEach(rating => {
+                        if (rating.classList.contains("post_rating_selected")) {
+                            const count = rating.querySelector(".post_rating_count");
+
+                            count.textContent = Math.max(0, Number(count.textContent) - 1);
+                            rating.classList.remove("post_rating_selected");
+                        };
+                    });
+
+                    rating.classList.add("post_rating_selected");
+                });
+            });
+        });
+     </script>
+
+    <!-- MAIN -->
+    <main>
+        <br>
+        <h2>Event Car Culture</h2>
+        <br>
+        
+        <!-- All Images Div -->
+        <div class="row">
+
+            <div class="columns3">
+                <div class="image_wrapper post"> 
+                    <img src="Images/EventCarCultureImages/EVNT1.jpg" style="width: 100%;" alt="Event Image 1">
+                    <div class="post-ratings-container">
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_up</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_down</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns3">
+                <div class="image_wrapper post">
+                    <img src="Images/EventCarCultureImages/EVNT2.jpg" style="width: 100%;" alt="Event Image 2">
+                    <div class="post-ratings-container">
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_up</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_down</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="columns3">
+                <div class="image_wrapper post">
+                    <img src="Images/EventCarCultureImages/EVNT3.jpg" style="width: 100%;" alt="Event Image 3">
+                    <div class="post-ratings-container">
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_up</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_down</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns3">
+                <div class="image_wrapper post">
+                    <img src="Images/EventCarCultureImages/EVNT4.jpg" style="width: 100%;" alt="Event Image 4">
+                    <div class="post-ratings-container">
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_up</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_down</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns3">
+                <div class="image_wrapper post">
+                    <img src="Images/EventCarCultureImages/EVNT5.jpg" style="width: 100%;" alt="Event Image 5">
+                    <div class="post-ratings-container">
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_up</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_down</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns3">
+                <div class="image_wrapper post">
+                    <img src="Images/EventCarCultureImages/EVNT6.jpg" style="width: 100%;" alt="Event Image 6">
+                    <div class="post-ratings-container">
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_up</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_down</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns3">
+                <div class="image_wrapper post">
+                    <img src="Images/EventCarCultureImages/EVNT7.jpg" style="width: 100%;" alt="Event Image 7">
+                    <div class="post-ratings-container">
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_up</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_down</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns3">
+                <div class="image_wrapper post">
+                    <img src="Images/EventCarCultureImages/EVNT8.jpg" style="width: 100%;" alt="Event Image 8">
+                    <div class="post-ratings-container">
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_up</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_down</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns3">
+                <div class="image_wrapper post">
+                    <img src="Images/EventCarCultureImages/EVNT9.jpg" style="width: 100%;" alt="Event Image 9">
+                    <div class="post-ratings-container">
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_up</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_down</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns3">
+                <div class="image_wrapper post">
+                    <img src="Images/EventCarCultureImages/EVNT10.jpg" style="width: 100%;" alt="Event Image 10">
+                    <div class="post-ratings-container">
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_up</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_down</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns3">
+                <div class="image_wrapper post">
+                    <img src="Images/EventCarCultureImages/EVNT11.jpg" style="width: 100%;" alt="Event Image 11">
+                    <div class="post-ratings-container">
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_up</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_down</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns3">
+                <div class="image_wrapper post">
+                    <img src="Images/EventCarCultureImages/EVNT12.jpg" style="width: 100%;" alt="Event Image 12">
+                    <div class="post-ratings-container">
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_up</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_down</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns3">
+                <div class="image_wrapper post">
+                    <img src="Images/EventCarCultureImages/EVNT13.jpg" style="width: 100%;" alt="Event Image 13">
+                    <div class="post-ratings-container">
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_up</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_down</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns3">
+                <div class="image_wrapper post">
+                    <img src="Images/EventCarCultureImages/EVNT14.jpg" style="width: 100%;" alt="Event Image 14">
+                    <div class="post-ratings-container">
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_up</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_down</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns3">
+                <div class="image_wrapper post">
+                    <img src="Images/EventCarCultureImages/EVNT15.jpg" style="width: 100%;" alt="Event Image 15">
+                    <div class="post-ratings-container">
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_up</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_down</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns3">
+                <div class="image_wrapper post">
+                    <img src="Images/EventCarCultureImages/EVNT16.jpg" style="width: 100%;" alt="Event Image 16">
+                    <div class="post-ratings-container">
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_up</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_down</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns3">
+                <div class="image_wrapper post">
+                    <img src="Images/EventCarCultureImages/EVNT17.jpg" style="width: 100%;" alt="Event Image 17">
+                    <div class="post-ratings-container">
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_up</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_down</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns3">
+                <div class="image_wrapper post">
+                    <img src="Images/EventCarCultureImages/EVNT18.jpg" style="width: 100%;" alt="Event Image 18">
+                    <div class="post-ratings-container">
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_up</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_down</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns3">
+                <div class="image_wrapper post">
+                    <img src="Images/EventCarCultureImages/EVNT19.jpg" style="width: 100%;" alt="Event Image 19">
+                    <div class="post-ratings-container">
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_up</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_down</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns3">
+                <div class="image_wrapper post">
+                    <img src="Images/EventCarCultureImages/EVNT20.jpg" style="width: 100%;" alt="Event Image 20">
+                    <div class="post-ratings-container">
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_up</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_down</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns3">
+                <div class="image_wrapper post">
+                    <img src="Images/EventCarCultureImages/EVNT21.jpg" style="width: 100%;" alt="Event Image 21">
+                    <div class="post-ratings-container">
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_up</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_down</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns3">
+                <div class="image_wrapper post">
+                    <img src="Images/EventCarCultureImages/EVNT22.jpg" style="width: 100%;" alt="Event Image 22">
+                    <div class="post-ratings-container">
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_up</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_down</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns3">
+                <div class="image_wrapper post">
+                    <img src="Images/EventCarCultureImages/EVNT23.jpg" style="width: 100%;" alt="Event Image 23">
+                    <div class="post-ratings-container">
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_up</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_down</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns3">
+                <div class="image_wrapper post">
+                    <img src="Images/EventCarCultureImages/EVNT24.jpg" style="width: 100%;" alt="Event Image 24">
+                    <div class="post-ratings-container">
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_up</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_down</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns3">
+                <div class="image_wrapper post">
+                    <img src="Images/EventCarCultureImages/EVNT25.jpg" style="width: 100%;" alt="Event Image 25">
+                    <div class="post-ratings-container">
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_up</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_down</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns3">
+                <div class="image_wrapper post">
+                    <img src="Images/EventCarCultureImages/EVNT26.jpg" style="width: 100%;" alt="Event Image 26">
+                    <div class="post-ratings-container">
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_up</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_down</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns3">
+                <div class="image_wrapper post">
+                    <img src="Images/EventCarCultureImages/EVNT27.jpg" style="width: 100%;" alt="Event Image 27">
+                    <div class="post-ratings-container">
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_up</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_down</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns3">
+                <div class="image_wrapper post">
+                    <img src="Images/EventCarCultureImages/EVNT28.jpg" style="width: 100%;" alt="Event Image 28">
+                    <div class="post-ratings-container">
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_up</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_down</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns3">
+                <div class="image_wrapper post">
+                    <img src="Images/EventCarCultureImages/EVNT29.jpg" style="width: 100%;" alt="Event Image 29">
+                    <div class="post-ratings-container">
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_up</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_down</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns3">
+                <div class="image_wrapper post">
+                    <img src="Images/EventCarCultureImages/EVNT30.jpg" style="width: 100%;" alt="Event Image 30">
+                    <div class="post-ratings-container">
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_up</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_down</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns3">
+                <div class="image_wrapper post">
+                    <img src="Images/EventCarCultureImages/EVNT31.jpg" style="width: 100%;" alt="Event Image 31">
+                    <div class="post-ratings-container">
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_up</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_down</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns3">
+                <div class="image_wrapper post">
+                    <img src="Images/EventCarCultureImages/EVNT32.jpg" style="width: 100%;" alt="Event Image 32">
+                    <div class="post-ratings-container">
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_up</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_down</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns3">
+                <div class="image_wrapper post">
+                    <img src="Images/EventCarCultureImages/EVNT33.jpg" style="width: 100%;" alt="Event Image 33">
+                    <div class="post-ratings-container">
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_up</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_down</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns3">
+                <div class="image_wrapper post">
+                    <img src="Images/EventCarCultureImages/EVNT34.jpg" style="width: 100%;" alt="Event Image 34">
+                    <div class="post-ratings-container">
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_up</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_down</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns3">
+                <div class="image_wrapper post">
+                    <img src="Images/EventCarCultureImages/EVNT35.jpg" style="width: 100%;" alt="Event Image 35">
+                    <div class="post-ratings-container">
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_up</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_down</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns3">
+                <div class="image_wrapper post">
+                    <img src="Images/EventCarCultureImages/EVNT36.jpg" style="width: 100%;" alt="Event Image 36">
+                    <div class="post-ratings-container">
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_up</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                        <div class="post-rating">
+                            <span class="post-rating-button material-icons">thumb_down</span>
+                            <span class="post-rating-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+  
+    <!-- FOOTER -->
+    <footer>
+        <h3>&#169; Luan Mangels 2024<br></h3>
+    </footer>
+
+</body>
+</html>
